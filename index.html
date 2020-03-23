@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KOVID-19 | Game Iendelee</title>
+  <meta name="description" content="It's all about the KOVID-19 Esport Tournament">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='src/js/aos/aos.css' type="text/css">
+  <link rel='stylesheet' href='src/js/swiperjs/css/swiper.min.css' type="text/css">
+  <link rel="stylesheet" href="./src/js/jquery.fancybox.min.css" type="text/css">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#c67000">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="icon-144x144.png" sizes="144x144" type="image/png">
+
+  <style>
+    .fancybox-slide--iframe .fancybox-content {
+      width: 800px;
+      height: 600px;
+      max-width: 80%;
+      max-height: 80%;
+      margin: 0;
+    }
+
+    .play-btn {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      transform: scale(1);
+      animation: pulse 2s infinite;
+    }
+
+    @media (max-width: 786px) {
+      .fancybox-slide--iframe .fancybox-content {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        margin: 0;
+      }
+
+      .fancybox-slide {
+        padding: 1rem;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+  </style>
+</head>
+
+<body class="not-verified">
+  <!-- partial:index.partial.html -->
+
+  <div class="page-wrapper">
+    <!--Navigation Bar-->
+    <header class="site-header" id="header">
+      <nav class="site-nav">
+        <div class="logo-wrapper"><img src="./src/img/logo.png" /></div>
+        <div class="toggle-menu-btn">
+          <button id="menu-btn"><img class="menu-closed" src="./src/img/menu.png" /><img class="menu-open"
+              src="./src/img/cross.png" /></button>
+        </div>
+      </nav>
+    </header>
+    <!--Site Menu  -->
+    <div class="site-menu">
+      <div class="bg"></div>
+      <div class="container">
+        <ul class="menu">
+          <li class="menu-item"> <a href="#intro-section" class="menu-link">HOME</a></li>
+          <li class="menu-item"> <a href="#gallery" class="menu-link">ABOUT</a></li>
+          <li class="menu-item"> <a href="#venues" class="menu-link">TOURNAMENT</a></li>
+          <li class="menu-item"> <a href="leaderboard.html" class="menu-lin">LEADERBOARD</a></li>
+        </ul>
+        <div class="menu-info">
+          <h4 class="sub-title" style="text-transform: capitalize;">#GameKwaHao</h4>
+          <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+            dolorem amet.</p>
+          <p class="normal-text copyright">&copy; KOVID-19 ESPORT<sup> <small>TM</small></sup><span>&nbsp;| &nbsp;
+              2019</span><span>&nbsp;| &nbsp; <a href="#" class="text-link" target="_blank">T&amp;Cs Apply</a></span>
+          </p>
+        </div>
+        <div class="backtotop"><a class="scroll-link" href="#"><img src="./src/img/back-to-top.png" /><span>BACK TO
+              TOP</span></a></div>
+      </div>
+    </div>
+    <div class="main-content">
+
+      <section id="video" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+        <div class="bg video-bg">
+          &nbsp;
+        </div>
+        <div class="content">
+          <div id="play-video-wrapper">
+            <a data-fancybox data-type="iframe" class="fancybox"
+              href="https://www.youtube.com/embed/_SmDcwX2RUw?rel=0&amp;autoplay=1&mute=1">
+              <img src="src/img/play.png" alt="PLAY VIDEO" id="video-state-icon" class="play-btn" />
+            </a>
+          </div>
+          <h1 class="main-title" style="">KOVID-19 Esport Tournament</h1>
+          <p class="normal-text" style="">Experience the BIGGEST E-Sport Tournament in Kenya from the comfort of your
+            home.</p>
+          <div class="link-wrapper">
+            <a class="link" href="https://mookh.com/" target="_blank">Register</a>
+            <a class="link" href="#venues">Events</a>
+          </div>
+        </div>
+      </section>
+      <div id="gallery" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+        <div class="gallery-wrapper">
+          <div class="swiper-container gallery-swiper" id="gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg" style="background-image: url('./src/gallery/2.jpg');">
+                </div>
+                <img data-swiper-parallax="-600" src="./src/gallery/2.jpg" alt="2" />
+              </div>
+              <div class="swiper-slide">
+                <div class="bg" style="background-image: url('./src/gallery/1.jpg');">
+                </div>
+                <img data-swiper-parallax="-600" src="./src/gallery/1.jpg" alt="1" />
+              </div>
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <section id="about" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+        <div class="bg"></div>
+        <div class="content-wrapper">
+          <article class="about-content">
+            <h2 class="main-title">KOVID-19 ESPORT TOURNAMENT</h2>
+            <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+              dolorem amet.</p>
+            <h4 class="sub-title">How to Participate</h4>
+            <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+              dolorem amet. Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+              dolorem amet.</p>
+
+            <p class="normal-text">
+              Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi dolorem amet.
+            </p>
+
+          </article>
+          <div class="link-wrapper">
+            <a class="link smooth-scroll" href="#venues">Events</a>
+            <a class="link smooth-scroll" href="#leaderboard">Leaderboard</a>
+            <a class="link" href="#" target="_blank">FAQs</a>
+          </div>
+        </div>
+      </section>
+      <section id="venues" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+        <div class="half-bg"></div>
+        <div class="content-section">
+          <h1 class="main-title">Tournaments</h1>
+          <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+            dolorem amet.</p>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="swiper-container swiper_1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrapper"><img src="./src/img/venue-thumbnai.png" />
+                    <h5 class="title">KOVID-19 ESPORT TOURNAMENT Qualifiers</h5>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <li>Venue: YouTube/Instagram</li>
+                      <Li>Date: 14<sup>th</sup> April 2020</Li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrapper"><img src="./src/img/knockout.png" />
+                    <h5 class="title">1<sup>st</sup> Knockout</h5>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <li>Venue: YouTube/Instagram</li>
+                      <Li>Date: 5<sup>th</sup> April 2020</Li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrapper"><img src="./src/img/venue-thumbnai.png" />
+                    <h5 class="title">2<sup>nd</sup> Knockout</h5>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <li>Venue: YouTube/Instagram</li>
+                      <Li>Date: 12<sup>th</sup> April 2020</Li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrapper"><img src="./src/img/venue-thumbnai.png" />
+                    <h5 class="title">The Final Battle</h5>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <li>Venue: YouTube/Instagram</li>
+                      <Li>Date: 20<sup>th</sup> April 2020</Li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="leaderboard">
+        <div class="content-section">
+          <h1 class="main-title">Results Leaderboard</h1>
+          <p class="normal-text">Who’s your favourite Player? Find out where they rank.</p>
+
+          <div class="link-wrapper f-justify" style="text-align: center;">
+            <a class="link full" href="leaderboard.html">View the Leaderboard</a>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="container">
+          <div class="img-wrapper"><img src="./src/img/jw-logo-dude.png" alt="KOVID-19 Footer Logo" /></div>
+          <div class="footer-content">
+            <p class="normal-text copyright">&copy; KOVID-19 ESPORT<sup> <small>TM</small></sup><span>&nbsp; | &nbsp; <a
+                  href="#" class="text-link" target="_blank">T&amp;Cs Apply</a></span>
+            </p>
+            <h4 class="sub-title" style="text-transform: capitalize;">#GameKwaHao</h4>
+            <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+              dolorem amet.</p>
+            <div class="social-link-wrapper">
+              <a href="#" target="_blank"><img src="./src/img/fb.png" alt="FB" /></a>
+              <a href="#" target="_blank"><img src="./src/img/ig.png" alt="IG" /></a>
+              <a href="#" target="_blank"><img src="./src/img/twitter.png" alt="Twitter" /></a>
+              <a href="#" target="_blank"><img src="./src/img/yt.png" alt="YouTube" /></a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Back to top button-->
+    <div class="backtotop_fixed">
+      <a class="scroll-link smooth-scroll" href="#header">
+        <img src="./src/img/back-to-top.png" />
+      </a>
+    </div>
+  </div>
+
+  <div class="loader">
+    <div class="bg"></div>
+    <div class="img-wrapper_">
+      <img src="./src/img/jw-logo-dude.png" alt="Loader Image" class="floater" />
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='src/js/jquery-3.3.1.min.js'></script>
+  <script src='src/js/swiperjs/js/swiper.min.js'></script>
+  <script src='src/js/aos/aos.js'></script>
+  <script src='src/js/jquery.fancybox.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

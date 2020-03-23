@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KOVID-19 | Game Iendelee</title>
+  <meta name="description" content="It's all about the KOVID-19 Esport Tournament">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='src/js/aos/aos.css' type="text/css">
+  <link rel='stylesheet' href='src/js/swiperjs/css/swiper.min.css' type="text/css">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#c67000">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="icon-144x144.png" sizes="144x144" type="image/png">
+
+  <style>
+    #leaderboard {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+
+<body class="not-verified">
+  <!-- partial:index.partial.html -->
+
+  <div class="page-wrapper">
+    <!--Navigation Bar-->
+    <header class="site-header" id="header">
+      <nav class="site-nav">
+        <a href="./">
+          <div class="logo-wrapper"><img src="./src/img/logo.png" /></div>
+        </a>
+        <div class="toggle-menu-btn">
+          <button id="menu-btn"><img class="menu-closed" src="./src/img/menu.png" /><img class="menu-open"
+              src="./src/img/cross.png" /></button>
+        </div>
+      </nav>
+    </header>
+    <!--Site Menu  -->
+    <div class="site-menu">
+      <div class="bg"></div>
+      <div class="container">
+        <ul class="menu">
+          <li class="menu-item"> <a href="./#intro-section" class="menu-lin">HOME</a></li>
+          <li class="menu-item"> <a href="./#gallery" class="menu-lin">ABOUT</a></li>
+          <li class="menu-item"> <a href="./#venues" class="menu-lin">TOURNAMENT</a></li>
+          <li class="menu-item"> <a href="#leaderboard" class="menu-link">LEADERBOARD</a></li>
+        </ul>
+        <div class="menu-info">
+          <h4 class="sub-title" style="text-transform: capitalize;">#GameKwaHao</h4>
+          <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+            dolorem amet.</p>
+          <p class="normal-text copyright">&copy; KOVID-19 ESPORT<sup> <small>TM</small></sup><span>&nbsp;| &nbsp;
+              2019</span><span>&nbsp;| &nbsp; <a href="#" class="text-link" target="_blank">T&amp;Cs Apply</a></span>
+          </p>
+        </div>
+        <div class="backtotop"><a class="scroll-link" href="#"><img src="./src/img/back-to-top.png" /><span>BACK TO
+              TOP</span></a></div>
+      </div>
+    </div>
+    <div class="main-content">
+      <section id="leaderboard">
+        <div class="content-section">
+          <h1 class="main-title">Results Leaderboard</h1>
+          <p class="normal-text">Who’s your favourite Player? Find out where they rank.</p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <td> <span>#</span></td>
+                  <td> <span>NAME</span></td>
+                  <td> <span>POINTS</span></td>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <tr>
+                  <td colspan="3">No data to display yet</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </section>
+      <section id="footer">
+        <div class="container">
+          <div class="img-wrapper"><img src="./src/img/jw-logo-dude.png" alt="KOVID-19 Footer Logo" /></div>
+          <div class="footer-content">
+            <p class="normal-text copyright">&copy; KOVID-19 ESPORT<sup> <small>TM</small></sup><span>&nbsp; | &nbsp; <a
+                  href="#" class="text-link" target="_blank">T&amp;Cs Apply</a></span>
+            </p>
+            <h4 class="sub-title" style="text-transform: capitalize;">#GameKwaHao</h4>
+            <p class="normal-text">Sapiente sunt omnis. Ut pariatur ad autem ducimus et. Voluptas rem voluptas sint modi
+              dolorem amet.</p>
+            <div class="social-link-wrapper">
+              <a href="#" target="_blank"><img src="./src/img/fb.png" alt="FB" /></a>
+              <a href="#" target="_blank"><img src="./src/img/ig.png" alt="IG" /></a>
+              <a href="#" target="_blank"><img src="./src/img/twitter.png" alt="Twitter" /></a>
+              <a href="#" target="_blank"><img src="./src/img/yt.png" alt="YouTube" /></a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Back to top button-->
+    <div class="backtotop_fixed">
+      <a class="scroll-link smooth-scroll" href="#header">
+        <img src="./src/img/back-to-top.png" />
+      </a>
+    </div>
+  </div>
+
+  <div class="loader">
+    <div class="bg"></div>
+    <div class="img-wrapper_">
+      <img src="./src/img/jw-logo-dude.png" alt="Loader Image" class="floater" />
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='src/js/jquery-3.3.1.min.js'></script>
+  <script src='src/js/swiperjs/js/swiper.min.js'></script>
+  <script src='src/js/aos/aos.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

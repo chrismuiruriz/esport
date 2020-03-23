@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Opera Mini Extreme Mode">
+        <title>Opera Mini Extreme Mode detected</title>
+        <style>
+            .div-instruction{
+                padding: 10px;
+            }
+            .img-instruction{
+                border: 1px solid black;
+            }
+            h2,h3{
+                font-weight: bold;
+            }
+            p{font-size: 16px;}
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script>
+
+                var isOperaExtreme = (navigator.userAgent.indexOf('Opera Mini/') > -1) && (navigator.userAgent.indexOf('Presto/') > -1);
+    if (isOperaExtreme === false) {
+        window.location = "http://dev.bean.co.ke/kenindia-wp/";
+    } 
+
+        </script>
+    </head>
+
+    <body style="background: #fff; font-family: Arial;padding: 8px;">
+    <center>
+        <h2>Opera Mini Extreme Mode detected</h2>
+        <p>To enjoy the full experience on the site, use Chrome or switch off Extreme Mode on OperaMini with the instructions below:</p>
+
+        <div class="row">
+            <div class="container">
+                <div class="col-md-3 col-sm-6 col-xs-6  div-instruction">
+                    <h3>Step 1</h3>
+                    <img src="res/instructions-1.jpg" alt="" class="img-responsive img-instruction">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  div-instruction">
+                    <h3>Step 2</h3>
+                    <img src="res/instructions-2.jpg" alt="" class="img-responsive img-instruction">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  div-instruction">
+                    <h3>Step 3</h3>
+                    <img src="res/instructions-3.jpg" alt="" class="img-responsive img-instruction">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  div-instruction">
+                    <h3>Step 4</h3>
+                    <img src="res/instructions-4.jpg" alt="" class="img-responsive img-instruction">
+                </div>
+
+            </div>
+        </div>
+        <br/>
+        <a href="../" class="btn btn-success">I've switched, Revisit site</a>
+        <br/><br/><br/>
+
+    </center>
+</body>
+</html>
